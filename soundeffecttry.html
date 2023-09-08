@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Effect Example</title>
+</head>
+<body>
+    <button id="playButton">Play Sound Effect</button>
+    <audio id="soundEffect">
+        <source src="Image/turnonlight.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Get references to the button and audio elements
+        var playButton = document.getElementById('playButton');
+        var soundEffect = document.getElementById('soundEffect');
+
+        // Add a click event listener to the button
+        playButton.addEventListener('click', () => {
+            // Play the sound effect
+            soundEffect.play();
+        });
+    </script>
+</body>
+</html>
